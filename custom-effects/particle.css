@@ -1,0 +1,10 @@
+#particles-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100%;
+  display: block;
+  pointer-events: none;
+  z-index: 1;
+}
