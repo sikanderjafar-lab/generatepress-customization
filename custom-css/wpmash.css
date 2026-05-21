@@ -1,0 +1,174 @@
+
+/* Image Tilt 1*/
+.tilt-image-1 {
+  transform: rotate(5deg);
+  transition: transform 0.3s ease;
+}
+
+.tilt-image-1:hover {
+  transform: rotate(0deg);
+}
+
+
+
+
+
+/* Image Tilt 2*/
+.tilt-image-2 {
+  transform: rotate(-5deg);
+  transition: transform 0.3s ease;
+}
+
+.tilt-image-2:hover {
+  transform: rotate(0deg);
+}
+
+
+
+
+
+/* Image Tilt 3*/
+.tilt-image-3 {
+  transform: rotate(-2deg);
+  transition: transform 0.3s ease;
+}
+
+.tilt-image-3:hover {
+  transform: rotate(0deg);
+}
+
+
+
+
+
+/* Ringing bounce animation */
+/* Ring once after 1s delay */
+.ringing {
+  animation: ringBounce 1.2s ease-in-out 1s 1 forwards;
+  transform-origin: center bottom;
+}
+
+/* Keyframes for ring + bounce effect */
+@keyframes ringBounce {
+  0%   { transform: translateY(0) rotate(0deg); }
+  10%  { transform: translateY(-6px) rotate(-6deg); }
+  20%  { transform: translateY(0) rotate(6deg); }
+  30%  { transform: translateY(-4px) rotate(-4deg); }
+  40%  { transform: translateY(0) rotate(3deg); }
+  50%  { transform: translateY(-2px) rotate(-2deg); }
+  60%, 100% { transform: translateY(0) rotate(0deg); }
+}
+
+}
+
+
+
+
+/* Hide Element */
+@media (max-width: 768px) {
+    /* CSS in here for mobile only */
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* CSS in here for tablet only */
+}
+@media (min-width: 1025px) {
+    /* CSS in here for desktop only */
+}
+
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+  /* IE10+ specific styles go here */
+}
+
+
+
+
+/* Simple working float animation */
+@keyframes gb-float {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-3px); }
+  100% { transform: translateY(0); }
+}
+
+.floaty {
+  display: inline-block; /* makes sure transform applies visually */
+  animation: gb-float 3s ease-in-out infinite;
+  transform-origin: center bottom;
+  will-change: transform;
+}
+
+
+
+
+
+/* === Customize GeneratePress mobile hamburger === */
+
+/* Size & position */
+.menu-toggle {
+  padding:8px 8px;
+  border: 2px solid var(--gp-primary-color, #3e4c71);
+  border-radius: 8px;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+
+
+
+/* Wheel spin */
+@keyframes wheel-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg); /* full clockwise spin */
+  }
+}
+
+.wheely {
+  display: inline-block;
+  animation: wheel-spin 5s linear infinite;
+  transform-origin: center center;
+  will-change: transform;
+}
+
+
+
+
+
+
+/* Logo Size Change for Mobile Only */
+@media (max-width: 768px) {
+    .header-image.is-logo-image {
+        max-width: 110px; /* adjust as needed */
+        height: auto;
+    }
+}
+
+
+
+/* For Smooth Transaction */
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+
+
+
+/* For marguee logos tilt */
+.tilt-image-5{
+  transform: rotate(-12deg);
+  transition: transform 0.3s ease;
+}
+
+
+
+/* For Comments Section */
+.comments-area {
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
